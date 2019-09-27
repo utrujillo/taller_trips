@@ -16,7 +16,11 @@ class MyApp extends StatelessWidget {
           title: Text('Taller Cytiis 2019')
         ),
         body: Center(
-          child: Text('El mitico hola mundo')
+          child: Text(
+              'El mitico hola mundo, haciendo pruebas',
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(fontWeight: FontWeight.bold )
+            )
         )
       ),
     );
