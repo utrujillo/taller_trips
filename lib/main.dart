@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'retos/reto1.dart';
+import 'inicio/autor.dart';
 
-// void main() => runApp(MyApp());
-void main() => runApp(Reto1());
+void main() => runApp(MyApp());
+// void main() => runApp(Reto1());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -17,13 +18,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Taller Cytiis 2019')
         ),
-        body: Center(
-          child: Text(
-              'El mitico hola mundo, haciendo pruebas',
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(fontWeight: FontWeight.bold )
-            )
-        )
+        body: new Autor()
       ),
     );
   }
