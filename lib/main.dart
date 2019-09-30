@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'retos/reto1.dart';
 import 'inicio/autor.dart';
+import 'inicio/descripcion.dart';
 
 void main() => runApp(MyApp());
 // void main() => runApp(Reto1());
@@ -18,7 +19,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Taller Cytiis 2019')
         ),
-        body: new Autor()
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget> [
+            new Autor(),
+            new Descripcion()
+          ]
+        )
       ),
     );
   }
