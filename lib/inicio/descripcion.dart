@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Descripcion extends StatelessWidget{
+
+  String descripcionTxt = "";
+  double tamanioTxt = 0;
+  int colorTxt = 0;
+
+  // Creación del constructor
+  Descripcion(this.descripcionTxt, this.tamanioTxt, this.colorTxt);
+
   @override
   Widget build(BuildContext context){
     final textoDescripcion = Container(
@@ -10,10 +18,11 @@ class Descripcion extends StatelessWidget{
         right: 20.0
       ),
       child: Text(
-        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        descripcionTxt,
         style: TextStyle(
-          fontSize: 14.0,
-          fontWeight: FontWeight.w400
+          fontSize: tamanioTxt,
+          fontWeight: FontWeight.w400,
+          color: Color(colorTxt)
         ),
         textAlign: TextAlign.justify,
       )

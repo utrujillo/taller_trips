@@ -22,8 +22,11 @@ class MyApp extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget> [
-            new Autor(),
-            new Descripcion()
+            new Autor("Juan Penas", 4.5),
+            new Descripcion(
+              "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+              14.0,
+              0xFF727272)
           ]
         )
       ),
