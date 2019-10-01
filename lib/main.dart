@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'retos/reto1.dart';
 import 'inicio/autor.dart';
 import 'inicio/descripcion.dart';
+import 'compartidos/estrellas.dart';
 
 void main() => runApp(MyApp());
 // void main() => runApp(Reto1());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget> [
-            new Autor("Juan Penas", 4.5),
+            new Autor("Juan Penas", 3.5),
             new Descripcion(
               "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
               14.0,
