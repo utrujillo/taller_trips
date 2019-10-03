@@ -27,6 +27,7 @@ class Autor extends StatelessWidget {
           child: Text(
             nombreAutor,
             style: TextStyle( //Para dar estilo personalizado al texto
+              fontFamily: "Dosis",
               fontSize: 30.0,
               fontWeight: FontWeight.w900
             ),
