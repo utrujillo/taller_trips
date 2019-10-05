@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import '../compartidos/estrellas.dart';
 
 class Resenha extends StatelessWidget{
   
   String urlImagen = "";
   String usuario = "";
-
-  Resenha(this.urlImagen, this.usuario);
+  String infoPonderacion = "";
+  Resenha(this.urlImagen, this.usuario, this.infoPonderacion);
 
   @override
   Widget build(BuildContext context){
@@ -41,10 +42,33 @@ class Resenha extends StatelessWidget{
       )
     );
 
+    final ponderacion = Row(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+            top: 0.0,
+            left: 20.0,
+            right: 5.0
+          ),
+          child: Text(
+            infoPonderacion,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              fontSize: 12.0,
+              color: Color(0xFFA3A5A7)
+            )
+          )
+        ),
+        Estrellas(4, 12.0, 0.0, 1.0)
+      ],
+    );
+    
+
     final detalleUsuario = Column(
       crossAxisAlignment: CrossAxisAlignment.start, //Esto hara que todo el contenido de la columna se alinee al inicio
       children: <Widget>[
-        nombreUsuario
+        nombreUsuario,
+        ponderacion
       ],
     );
 
