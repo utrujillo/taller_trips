@@ -3,6 +3,7 @@ import 'retos/reto1.dart';
 import 'inicio/autor.dart';
 import 'inicio/descripcion.dart';
 import 'compartidos/estrellas.dart';
+import 'inicio/resenha.dart';
 
 void main() => runApp(MyApp());
 // void main() => runApp(Reto1());
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
             new Descripcion(
               "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
               14.0,
-              0xFF727272)
+              0xFF727272),
+            new Resenha("assets/images/luffy.jpg")
           ]
         )
       ),
