@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
               "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
               14.0,
               0xFF727272),
-            new Resenha("assets/images/luffy.jpg")
+            new Resenha("assets/images/luffy.jpg", "Monkey D. Luffy")
           ]
         )
       ),

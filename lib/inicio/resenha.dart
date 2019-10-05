@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 class Resenha extends StatelessWidget{
   
-  String urlImagen = "assets/images/luffy.jpg";
+  String urlImagen = "";
+  String usuario = "";
 
-  Resenha(this.urlImagen);
+  Resenha(this.urlImagen, this.usuario);
 
   @override
   Widget build(BuildContext context){
@@ -25,9 +26,32 @@ class Resenha extends StatelessWidget{
       ),
     );
 
+    final nombreUsuario = Container(
+      margin: EdgeInsets.only(
+        top: 0.0,
+        left: 20.0
+      ),
+      child: Text(
+        usuario,
+        textAlign: TextAlign.left,
+        style: TextStyle(
+          fontSize: 17.0,
+          color: Color(0xFF3F4242)
+        )
+      )
+    );
+
+    final detalleUsuario = Column(
+      crossAxisAlignment: CrossAxisAlignment.start, //Esto hara que todo el contenido de la columna se alinee al inicio
+      children: <Widget>[
+        nombreUsuario
+      ],
+    );
+
     final contenidoResenha = Row(
       children: <Widget>[
-        foto
+        foto,
+        detalleUsuario
       ],
     );
 
