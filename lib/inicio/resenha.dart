@@ -6,7 +6,8 @@ class Resenha extends StatelessWidget{
   String urlImagen = "";
   String usuario = "";
   String infoPonderacion = "";
-  Resenha(this.urlImagen, this.usuario, this.infoPonderacion);
+  String comentario = "";
+  Resenha(this.urlImagen, this.usuario, this.infoPonderacion, this.comentario);
 
   @override
   Widget build(BuildContext context){
@@ -37,7 +38,8 @@ class Resenha extends StatelessWidget{
         textAlign: TextAlign.left,
         style: TextStyle(
           fontSize: 17.0,
-          color: Color(0xFF3F4242)
+          color: Color(0xFF3F4242),
+          fontWeight: FontWeight.bold
         )
       )
     );
@@ -62,13 +64,29 @@ class Resenha extends StatelessWidget{
         Estrellas(4, 12.0, 0.0, 1.0)
       ],
     );
+
+    final comentarioUsuario = Container(
+      margin: EdgeInsets.only(
+        top: 0.0,
+        left: 20.0
+      ),
+      child: Text(
+        comentario,
+        textAlign: TextAlign.left,
+        style: TextStyle(
+          fontSize: 12.0,
+          color: Color(0xFF3F4242)
+        )
+      )
+    );
     
 
     final detalleUsuario = Column(
       crossAxisAlignment: CrossAxisAlignment.start, //Esto hara que todo el contenido de la columna se alinee al inicio
       children: <Widget>[
         nombreUsuario,
-        ponderacion
+        ponderacion,
+        comentarioUsuario
       ],
     );
 
