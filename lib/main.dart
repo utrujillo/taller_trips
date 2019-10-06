@@ -4,6 +4,7 @@ import 'inicio/autor.dart';
 import 'inicio/descripcion.dart';
 import 'inicio/resenhaList.dart';
 import 'inicio/gradienteEncabezado.dart';
+import 'inicio/imagenCard.dart';
 
 void main() => runApp(MyApp());
 // void main() => runApp(Reto1());
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
                 ResenhaList()
               ],
             ),
-            GradienteEncabezado("Taller Ciitys 2019")
+            GradienteEncabezado("Taller Ciitys 2019"),
+            ImagenCard("assets/images/sea01.jpeg")
           ],
         )
       ),
