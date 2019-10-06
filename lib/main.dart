@@ -3,6 +3,7 @@ import 'retos/reto1.dart';
 import 'inicio/autor.dart';
 import 'inicio/descripcion.dart';
 import 'inicio/resenhaList.dart';
+import 'inicio/gradienteEncabezado.dart';
 
 void main() => runApp(MyApp());
 // void main() => runApp(Reto1());
@@ -14,22 +15,31 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.blue,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Taller Cytiis 2019')
+          title: Text(
+            'Taller Cytiis 2019',
+            style: TextStyle(
+              color: Colors.white
+            )
+          )
         ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget> [
-            // new Autor("Juan Penas", 3.5),
-            // new Descripcion(
-            //   "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            //   14.0,
-            //   0xFF727272),
-            new ResenhaList()
-          ]
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                Autor("Juan Penas", 3.5),
+                Descripcion(
+                  "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                  14.0,
+                  0xFF727272),
+                ResenhaList()
+              ],
+            ),
+            GradienteEncabezado()
+          ],
         )
       ),
     );

@@ -20,7 +20,7 @@ class Autor extends StatelessWidget {
       children: <Widget> [
         Container(
           margin: EdgeInsets.only( //EdgeInsets ayudan a agregar margenes
-            top: 320.0,
+            top: 260.0,
             left: 20.0,
             right: 20.0
           ),
@@ -37,7 +37,7 @@ class Autor extends StatelessWidget {
 
         Container(
           margin: EdgeInsets.only( //EdgeInsets ayudan a agregar margenes
-            top: 320.0,
+            top: 260.0,
             left: 0.0,
             right: 0.0
           ),
