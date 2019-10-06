@@ -7,7 +7,8 @@ class Resenha extends StatelessWidget{
   String usuario = "";
   String infoPonderacion = "";
   String comentario = "";
-  Resenha(this.urlImagen, this.usuario, this.infoPonderacion, this.comentario);
+  double noEstrellas = 0;
+  Resenha(this.urlImagen, this.usuario, this.infoPonderacion, this.noEstrellas, this.comentario);
 
   @override
   Widget build(BuildContext context){
@@ -61,7 +62,7 @@ class Resenha extends StatelessWidget{
             )
           )
         ),
-        Estrellas(4, 12.0, 0.0, 1.0)
+        Estrellas(noEstrellas, 12.0, 0.0, 1.0)
       ],
     );
 
