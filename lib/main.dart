@@ -18,14 +18,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Taller Cytiis 2019',
-            style: TextStyle(
-              color: Colors.white
-            )
-          )
-        ),
         body: Stack(
           children: <Widget>[
             ListView(
@@ -38,7 +30,7 @@ class MyApp extends StatelessWidget {
                 ResenhaList()
               ],
             ),
-            GradienteEncabezado()
+            GradienteEncabezado("Taller Ciitys 2019")
           ],
         )
       ),
