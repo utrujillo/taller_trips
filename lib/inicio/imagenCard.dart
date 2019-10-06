@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'botonFav.dart';
 
 class ImagenCard extends StatelessWidget{
 
@@ -35,6 +36,12 @@ class ImagenCard extends StatelessWidget{
 
     );
 
-    return imagen;
+    return Stack(
+      alignment: Alignment(0.9, 1.18), // x, y
+      children: <Widget>[
+        imagen,
+        BotonFav()
+      ],
+    );
   }
 }
