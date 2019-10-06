@@ -12,7 +12,7 @@ class ImagenCard extends StatelessWidget{
       height: 220.0,
       width: 250.0,
       margin: EdgeInsets.only(
-        top: 90.0,
+        top: 60.0,
         left: 20.0
       ),
 

@@ -4,7 +4,7 @@ import 'inicio/autor.dart';
 import 'inicio/descripcion.dart';
 import 'inicio/resenhaList.dart';
 import 'inicio/gradienteEncabezado.dart';
-import 'inicio/imagenCard.dart';
+import 'inicio/galeriaImagenes.dart';
 
 void main() => runApp(MyApp());
 // void main() => runApp(Reto1());
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
               ],
             ),
             GradienteEncabezado("Taller Ciitys 2019"),
-            ImagenCard("assets/images/sea01.jpeg")
+            GaleriaImagenes()
           ],
         )
       ),
